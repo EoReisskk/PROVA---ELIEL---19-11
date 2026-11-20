@@ -1,57 +1,45 @@
 package controllers;
 
-
 import models.FuncionarioModel;
 import services.FuncionarioServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/funcionarios")
+@RequestMapping(path = "/api/funcionarios")
 public class FuncionarioController {
 
     @Autowired
     private FuncionarioServices funcionarioServices;
 
     @GetMapping
-    public List<FuncionarioModel> findAll(){
-        return  funcionarioServices.findAll();
+    public ResponseEntity<List<FuncionarioModel>> findAll(){
+        return ResponseEntity.ok(funcionarioServices.findAll());
     }
 
     @GetMapping("/{id}")
-    public FuncionarioModel buscarPorId( @PathVariable Long id){
-        return  funcionarioServices.buscarPorId(id);
-    }
-
-    @DeleteMapping("/{id}")
-    public void deletar( @PathVariable Long id){
-        funcionarioServices.deletar(id);
+    public ResponseEntity<FuncionarioModel> buscarPorId(@PathVariable Long id){
+        return ResponseEntity.ok(funcionarioServices.buscarPorId(id));
     }
 
     @PostMapping
-    public FuncionarioModel criarFuncionario( @RequestBody  FuncionarioModel funcionarioModel){
-        return  funcionarioServices.criarPessoa(funcionarioModel);
+    public ResponseEntity<FuncionarioModel> criarFuncionario(@RequestBody FuncionarioModel funcionarioModel){
+        FuncionarioModel response = funcionarioServices.criarPessoa(funcionarioModel);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @PutMapping("/{id}")
-    public FuncionarioModel atualizar(@PathVariable Long id, @RequestBody FuncionarioModel funcionarioModel){
-        return  funcionarioServices.atualizar(id,funcionarioModel);
+    public ResponseEntity<FuncionarioModel> atualizar(@PathVariable Long id, @RequestBody FuncionarioModel funcionarioModel){
+        return ResponseEntity.ok(funcionarioServices.atualizar(id, funcionarioModel));
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletar(@PathVariable Long id){
+        funcionarioServices.deletar(id);
+        return ResponseEntity.noContent().build();
+    }
 }
