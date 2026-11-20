@@ -35,23 +35,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0001329628158633" />
-      <entry key="MS500" value="1.2918568898973972" />
-      <entry key="S2" value="2.236078883982632" />
-      <entry key="S5" value="2.6498139386399644" />
-      <entry key="S10" value="2.816488302561691" />
-      <entry key="S30" value="3.0509985211713797" />
-      <entry key="S60" value="5.255330108046141" />
-      <entry key="M2" value="14.061759918848217" />
-      <entry key="M5" value="32.67136963210153" />
-      <entry key="M10" value="44.66047035168224" />
-      <entry key="M15" value="49.732220178031454" />
-      <entry key="M30" value="55.47734868508076" />
-      <entry key="H1" value="58.63423864319862" />
-      <entry key="H2" value="60.290032401741" />
-      <entry key="H4" value="61.138117322874876" />
-      <entry key="D1" value="61.85538368010946" />
-      <entry key="W1" value="61.979316644588955" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000009683285722" />
+      <entry key="S2" value="1.0313693620496318" />
+      <entry key="S5" value="1.2503815217711898" />
+      <entry key="S10" value="1.500381376324012" />
+      <entry key="S30" value="1.7942292006399938" />
+      <entry key="S60" value="1.939495800643853" />
+      <entry key="M2" value="2.681672199161178" />
+      <entry key="M5" value="10.002254399597666" />
+      <entry key="M10" value="24.468861134527252" />
+      <entry key="M15" value="34.37761969837452" />
+      <entry key="M30" value="49.07659243357594" />
+      <entry key="H1" value="58.93979839145257" />
+      <entry key="H2" value="64.66609252494463" />
+      <entry key="H4" value="67.75309963701356" />
+      <entry key="D1" value="70.44738962371008" />
+      <entry key="W1" value="70.92077022637623" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -73,23 +73,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.18187103922437695" />
-      <entry key="MS500" value="0.9989162320984272" />
-      <entry key="S2" value="2.1500888950412156" />
-      <entry key="S5" value="2.6140027181233516" />
-      <entry key="S10" value="2.798323386465073" />
-      <entry key="S30" value="3.044743000750508" />
-      <entry key="S60" value="5.250388939899561" />
-      <entry key="M2" value="14.055091327939722" />
-      <entry key="M5" value="32.66485538442444" />
-      <entry key="M10" value="44.65591393683048" />
-      <entry key="M15" value="49.728808279553945" />
-      <entry key="M30" value="55.4754280813174" />
-      <entry key="H1" value="58.63321878028387" />
-      <entry key="H2" value="60.28950676883566" />
-      <entry key="H4" value="61.13785047458097" />
-      <entry key="D1" value="61.855338636130035" />
-      <entry key="W1" value="61.979310195670806" />
+      <entry key="MS100" value="0.5212328804205607" />
+      <entry key="MS500" value="0.877822618674648" />
+      <entry key="S2" value="0.9980489610818669" />
+      <entry key="S5" value="1.2333382569820819" />
+      <entry key="S10" value="1.4897765772323739" />
+      <entry key="S30" value="1.7898789940540265" />
+      <entry key="S60" value="1.9371218199314424" />
+      <entry key="M2" value="2.6800192931377103" />
+      <entry key="M5" value="9.999995056791642" />
+      <entry key="M10" value="24.466190462372474" />
+      <entry key="M15" value="34.3751331264859" />
+      <entry key="M30" value="49.07482270644805" />
+      <entry key="H1" value="58.938736048992496" />
+      <entry key="H2" value="64.6655096882844" />
+      <entry key="H4" value="67.75279427127069" />
+      <entry key="D1" value="70.4473366986124" />
+      <entry key="W1" value="70.92076261464886" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -107,6 +107,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.FuncionarioApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
